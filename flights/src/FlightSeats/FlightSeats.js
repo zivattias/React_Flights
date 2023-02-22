@@ -6,17 +6,21 @@ export default function FlightSeats(props) {
 
     let textStyle = {
         color: 'black',
+        fontWeight: 'bold'
     }
 
-    seatsLeft > 20 ? textStyle.color = 'green' :
-    seatsLeft < 20 && seatsLeft >= 8 ? textStyle.color = 'yellow' :
-    8 > seatsLeft > 0 ? textStyle.color = 'red' : seatsLeft = "Sold Out"
-
+    if (seatsLeft !== 0) {
+        seatsLeft > 20 ? textStyle.color = 'green' :
+        seatsLeft < 20 && seatsLeft >= 8 ? textStyle.color = 'orange' :
+        8 > seatsLeft > 0 ? textStyle.color = 'red' : textStyle.color = 'black'
+    } else {
+        seatsLeft = "Sold Out"
+    }
 
     return (
         <div className='flight_seats_wrapper'>
-        <img src={seat} alt='Flight seat icon' />
-        <p>Seats left: <span style={textStyle}>{props.seats_left}</span></p>
+        <img className='flight-seat-img' src={seat} alt='Flight seat icon' />
+        <p>Seats left: <span style={textStyle}>{seatsLeft}</span></p>
         </div>
     )
 }

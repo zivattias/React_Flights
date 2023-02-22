@@ -8,7 +8,6 @@ export default function FlightContainer(props) {
 
     const dateDiff = Math.round((props.destination.time - props.origin.time) / (1000 * 60 * 60 * 24))
 
-
     return (
     <div className='flight-container'>
         <FlightTitle flight_num={props.flight_num}/>
