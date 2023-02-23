@@ -17,7 +17,7 @@ export const FLIGHTS_DATA = [
         },
     },
     {
-        flight_num: 'VS20',
+        flight_num: 'VB204',
         price_usd: 1026.6,
         seats_left: 0,
         origin: {
@@ -34,7 +34,7 @@ export const FLIGHTS_DATA = [
         },
     },
     {
-        flight_num: 'VS21',
+        flight_num: 'VS217',
         price_usd: 1026.6,
         seats_left: 18,
         origin: {
@@ -51,7 +51,7 @@ export const FLIGHTS_DATA = [
         },
     },
     {
-        flight_num: 'VS21',
+        flight_num: 'VS219',
         price_usd: 1026.6,
         seats_left: 21,
         origin: {
@@ -63,7 +63,7 @@ export const FLIGHTS_DATA = [
         destination: {
             country: 'UK',
             city: 'London',
-            time: new Date(2023, 2, 12, 12, 50),
+            time: new Date(2023, 2, 13, 23, 59),
             img_url: 'https://cdn.londonandpartners.com/-/media/images/london/visit/campaigns/international-recovery-campaign/lets-do-london-hero-international-1920.jpeg?mw=1920&hash=99A0F534AD9AD024CF866EBFFF8B40AE432AAFCE'
         },
     },

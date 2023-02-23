@@ -1,5 +1,7 @@
 import './FlightSeats.css'
 import seat from './flight_seat.png'
+import Typography from '@mui/material/Typography';
+import FlightClassIcon from '@mui/icons-material/FlightClass';
 
 export default function FlightSeats(props) {
     let seatsLeft = props.seats_left
@@ -19,8 +21,10 @@ export default function FlightSeats(props) {
 
     return (
         <div className='flight_seats_wrapper'>
-        <img className='flight-seat-img' src={seat} alt='Flight seat icon' />
-        <p>Seats left: <span style={textStyle}>{seatsLeft}</span></p>
+        <FlightClassIcon fontSize='large' src={seat} alt='Flight seat icon' />
+        <Typography variant="h6" color="text.primary">
+            Seats left: <span style={textStyle}>{seatsLeft}</span>
+        </Typography>
         </div>
     )
 }
