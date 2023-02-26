@@ -9,7 +9,6 @@ export default function FlightContainer(props) {
   const dateDiff = Math.round(
     (props.destination.time - props.origin.time) / (1000 * 60 * 60 * 24)
   );
-  console.log(dateDiff);
 
   const commonStyles = {
     bgcolor: "background.paper",
